@@ -49,10 +49,57 @@
         amazement I experience visually; I have a feeling that you can relate to this.</p>
       <p>"Photography is by nature
         a documentary art."</p>
-      <img src="Images/pexels-gonzalo-álvarez-balcazar-14364650.jpg" width=400 height=auto alt="Photography In Nature">
+      <img src="./Images/pexels-gonzalo-álvarez-balcazar-14364650.jpg" width="400" height="auto" alt="Photography In Nature">
       <a href="#services">Services</a>
     </section>
+    <section class="carousel">
+      <div class="carousel-container">
+        <img src="./Images/pexels-max-ravier-3403577.jpg" width="200" height="auto" alt="">
+      </div>
+
+      <!-- Back and Forward Buttons -->
+      <a class="carousel-back" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="carousel-forward" onclick="plusSlides(1)">&#10095;</a>
+    </section>
   </main>
+  <script>
+    /*
+        Carousel based on this example https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/
+        with class names changed to work better with other components, and the design of the carousel
+        altered from the example, and auto-scrolling added
+    */
+    let slidePosition = 1;
+    SlideShow(slidePosition);
+
+    // forward/Back controls
+    function plusSlides(n) {
+        SlideShow((slidePosition += n));
+    }
+
+    //  images controls
+    function currentSlide(n) {
+        SlideShow((slidePosition = n));
+    }
+
+    function SlideShow(n) {
+        let slides = document.getElementsByClassName("carousel-container");
+        if (n > slides.length) {
+            slidePosition = 1;
+        }
+        if (n < 1) {
+            slidePosition = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slidePosition - 1].style.display = "block";
+    }
+
+    // Automatically scroll slides
+    window.setInterval(function () {
+        plusSlides(1);
+    }, 4000);
+</script>
 </body>
 
 </html>
