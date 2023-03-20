@@ -40,7 +40,7 @@
   <main>
     <section>
       <h1>Camille Cardosa Photography</h1>
-      <a href="#contact">Book Now</a>
+      <a class="link-button" href="#contact">Book Now</a>
     </section>
     <section>
       <h2>Photography In Nature</h2>
@@ -49,8 +49,9 @@
         amazement I experience visually; I have a feeling that you can relate to this.</p>
       <p>"Photography is by nature
         a documentary art."</p>
-      <img src="./Images/pexels-gonzalo-álvarez-balcazar-14364650.jpg" width="400" height="auto" alt="Photography In Nature">
-      <a href="#services">Services</a>
+      <img src="./Images/pexels-gonzalo-álvarez-balcazar-14364650.jpg" width="400" height="auto"
+        alt="Photography In Nature">
+      <a class="link-button " href="#services">Services</a>
     </section>
     <section class="carousel">
       <div class="carousel-container">
@@ -61,45 +62,55 @@
       <a class="carousel-back" onclick="plusSlides(-1)">&#10094;</a>
       <a class="carousel-forward" onclick="plusSlides(1)">&#10095;</a>
     </section>
-  </main>
-  <script>
-    /*
-        Carousel based on this example https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/
-        with class names changed to work better with other components, and the design of the carousel
-        altered from the example, and auto-scrolling added
-    */
-    let slidePosition = 1;
-    SlideShow(slidePosition);
+    <section>
+      <h2>Coastal, Rugged, & Natural</h2>
+      <p>Beautiful landscapes and treasured moments, all set against the natural backdrop of the natural, rugged an
+        unpredictable west coast.</p>
+      <img src="./Images/Abalone4.jpg" width="400" height="auto" alt="">
+      <a class="link-button" href="#gallery">View Gallery</a>
+    </section>
+    <script>
+      /*
+          Carousel based on this example https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/
+          with class names changed to work better with other components, and the design of the carousel
+          altered from the example, and auto-scrolling added
+      */
+      let slidePosition = 1;
+      SlideShow(slidePosition);
 
-    // forward/Back controls
-    function plusSlides(n) {
+      // forward/Back controls
+      function plusSlides(n) {
         SlideShow((slidePosition += n));
-    }
+      }
 
-    //  images controls
-    function currentSlide(n) {
+      //  images controls
+      function currentSlide(n) {
         SlideShow((slidePosition = n));
-    }
+      }
 
-    function SlideShow(n) {
+      function SlideShow(n) {
         let slides = document.getElementsByClassName("carousel-container");
         if (n > slides.length) {
-            slidePosition = 1;
+          slidePosition = 1;
         }
         if (n < 1) {
-            slidePosition = slides.length;
+          slidePosition = slides.length;
         }
         for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+          slides[i].style.display = "none";
         }
         slides[slidePosition - 1].style.display = "block";
-    }
+      }
 
-    // Automatically scroll slides
-    window.setInterval(function () {
+      // Automatically scroll slides
+      window.setInterval(function () {
         plusSlides(1);
-    }, 4000);
-</script>
+      }, 4000);
+    </script>
+  </main>
+  <footer>
+    
+  </footer>
 </body>
 
 </html>
