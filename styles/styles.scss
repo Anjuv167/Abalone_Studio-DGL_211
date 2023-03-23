@@ -6,3 +6,16 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
+.button {
+    background-color: $button-color;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+
+    &:hover, &:focus-visible {
+        background-color: $button-hovered;
+    }
+}

@@ -6,4 +6,16 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+.button {
+  background-color: #CB8950;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+.button:hover, .button:focus-visible {
+  background-color: #f8a862;
+}
 /*# sourceMappingURL=styles.css.map */
