@@ -9,6 +9,13 @@ html {
     box-sizing: inherit;
 }
 
+// clearfix Hack
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 @include headings {
     color: $header-color;
 }

@@ -1,0 +1,39 @@
+.home {
+
+    .services {
+
+        background-color: rgba(203, 137, 80, 0.4);
+
+        margin-bottom: 40px;
+
+        @include md {
+            width: 90%;
+            margin: 100px auto 50px;
+            height: 300px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+
+            @include md {
+                float: left;
+                position: relative;
+                bottom: 100px;
+                right: 25px;
+            }
+        }
+
+        @include headings {
+            @include md {
+                position: relative;
+                left: 390px;
+                bottom: 35px;
+            }
+        }
+    }
+
+    .quote {
+        font-weight: bold;
+    }
+}
