@@ -1,20 +1,20 @@
-.home .services {
+.home__services {
   background-color: rgba(203, 137, 80, 0.4);
   margin-bottom: 40px;
 }
 @media (min-width: 768px) {
-  .home .services {
+  .home__services {
     width: 90%;
     margin: 100px auto 50px;
     height: 300px;
   }
 }
-.home .services img {
+.home__services img {
   display: block;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .home .services img {
+  .home__services img {
     float: left;
     position: relative;
     bottom: 100px;
@@ -22,8 +22,8 @@
   }
 }
 @media (min-width: 768px) {
-  .home .services h1, .home .services h2, .home .services h3,
-.home .services h4, .home .services h5, .home .services h6 {
+  .home__services h1, .home__services h2, .home__services h3,
+.home__services h4, .home__services h5, .home__services h6 {
     position: relative;
     left: 390px;
     bottom: 35px;
@@ -31,6 +31,36 @@
 }
 .home .quote {
   font-weight: bold;
+}
+.home__gallery {
+  width: 90%;
+  margin: 0 auto;
+}
+.home__gallery img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .home__gallery img {
+    float: right;
+    margin: 0;
+    position: relative;
+    bottom: 150px;
+  }
+}
+.home__gallery p {
+  max-width: 30ch;
+}
+.home__gallery .button {
+  margin: 20px auto;
+}
+@media (min-width: 768px) {
+  .home__gallery .button {
+    margin: 20px 0;
+  }
 }
 
 html {
@@ -62,6 +92,10 @@ p {
   color: #fff;
   font-size: 2rem;
   text-decoration: none;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 10px 40px;
   border-radius: 20px;
 }

@@ -1,6 +1,6 @@
 .home {
 
-    .services {
+    &__services {
 
         background-color: rgba(203, 137, 80, 0.4);
 
@@ -35,5 +35,37 @@
 
     .quote {
         font-weight: bold;
+    }
+
+    &__gallery {
+
+        width: 90%;
+        margin: 0 auto;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 0 auto;
+
+            @include md {
+                float: right;
+                margin: 0;
+                position: relative;
+                bottom: 150px;
+            }
+        }
+
+        p {
+            max-width: 30ch;
+        }
+        .button {
+            margin:20px auto;
+
+            @include md {
+                margin: 20px 0;
+            }
+        }
     }
 }
