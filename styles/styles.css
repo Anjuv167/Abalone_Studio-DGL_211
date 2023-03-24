@@ -7,6 +7,15 @@ html {
   box-sizing: inherit;
 }
 
+h1, h2, h3,
+h4, h5, h6 {
+  color: #000000;
+}
+
+p {
+  color: #126D7B;
+}
+
 .button {
   background-color: #CB8950;
   color: #fff;

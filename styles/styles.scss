@@ -1,10 +1,20 @@
 @import "variables";
+@import "mixins";
+@import "main";
 html {
     box-sizing: border-box;
     font-size: 16px;
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+@include headings {
+    color: $header-color;
+}
+
+p {
+    color: $font-color;
 }
 
 .button {
