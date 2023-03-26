@@ -24,7 +24,7 @@ html {
 /* Body */
 
 .body {
-  font: normal 400 2.125rem/3.25rem "Inter-Regular";
+  font: normal 400 2.0rem/3.25rem "Inter-Regular";
 }
 
 
@@ -37,7 +37,9 @@ html {
   width: 100%;
   height: 90px;
 }
-
+.navbar {
+  padding: 20px 10px 20px 10px;
+}
 .navbar-custom {
   position: fixed;
   background-color: rgb(18, 78, 100);
@@ -66,5 +68,25 @@ html {
 }
 .nav li :hover{
   color: rgb(2, 24, 24);
+}
+
+/* footer */
+footer {
+  align-items: center;
+  padding: 30px 10px 10px 10px;
+  background-color:rgb(18, 78, 100);
+}
+
+footer .container {
+  color: #fff;
+}
+
+footer a.text-light{
+  color: #fff;
+}
+
+footer a.text-light:hover { 
+  color: #fed136!important; 
+  text-decoration: none; 
 }
 
