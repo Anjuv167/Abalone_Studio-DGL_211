@@ -34,9 +34,20 @@
   background-image: url("../Images/Home-main.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .home .cta h1 {
   color: white;
+  margin-left: 3%;
+  margin-top: 120px;
+}
+.home .cta a {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 3%;
+  margin-top: 120px;
 }
 .home .quote {
   font-weight: bold;
