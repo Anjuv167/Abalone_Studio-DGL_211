@@ -90,6 +90,15 @@
   width: 100%;
 }
 
+.services section {
+  background-color: rgba(203, 137, 80, 0.4);
+}
+.services .cta {
+  height: 500px;
+  color: white;
+  background-image: url("../Images/Abalone-services-1.jpg");
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
