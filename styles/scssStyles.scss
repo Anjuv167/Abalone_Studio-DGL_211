@@ -32,12 +32,30 @@ p {
     text-decoration: none;
     display: block;
     width: fit-content;
+    height: fit-content;
     padding: 10px 40px;
     border-radius: 20px;
 
     &:hover, &:focus-visible {
         background-color: $button-hovered;
     }
+}
+
+.cta {
+    background-repeat: no-repeat;
+        background-size: 100%;
+
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            color: white;
+            margin-left: 3%;
+        }
+
+        a {
+            margin-right: 3%;
+        }
 }
 
 .carousel {

@@ -32,21 +32,8 @@
 .home .cta {
   height: 300px;
   background-image: url("../Images/Home-main.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  display: flex;
-  justify-content: space-between;
 }
-.home .cta h1 {
-  color: white;
-  margin-left: 3%;
-  margin-top: 120px;
-}
-.home .cta a {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin-right: 3%;
+.home .cta h1, .home .cta a {
   margin-top: 120px;
 }
 .home .quote {
@@ -95,9 +82,11 @@
 }
 .services .cta {
   height: 500px;
-  color: white;
   background-image: url("../Images/Abalone-services-1.jpg");
   background-position: center;
+}
+.services .cta h1, .services .cta a {
+  margin-top: 220px;
 }
 
 html {
@@ -133,11 +122,28 @@ p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 10px 40px;
   border-radius: 20px;
 }
 .button:hover, .button:focus-visible {
   background-color: #f8a862;
+}
+
+.cta {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cta h1 {
+  color: white;
+  margin-left: 3%;
+}
+.cta a {
+  margin-right: 3%;
 }
 
 .carousel {

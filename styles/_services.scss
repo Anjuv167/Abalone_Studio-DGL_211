@@ -5,8 +5,11 @@
 
     .cta {
         height: 500px;
-        color: white;
         background-image: url("../Images/Abalone-services-1.jpg");
         background-position: center;
+
+        h1, a {
+            margin-top: 220px;
+        }
     }
 }
