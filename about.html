@@ -7,43 +7,243 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18="page-title">Camille Cardosa</title>
   <meta name="description" content="Camille Cardosa website">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/bootstrap.css">
+  <link rel="stylesheet" href="./styles/bootstrap.css.map">
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/bootstrap.min.css.map">
+  <link rel="stylesheet" href="./styles/bootstrap-theme.css">
+  <link rel="stylesheet" href="./styles/bootstrap-theme.css">
+  <link rel="stylesheet" href="./styles/bootstrap-theme.css.map">
+  <link rel="stylesheet" href="./styles/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="./styles/bootstrap-theme.min.css.map">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=”anonymous”></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
 </head>
 
-<body>
+<body class="body" data-theme="body">
+
+  <!--============ Header ============-->
+
+  <header class="header">
+      <nav  class="navbar navbar-custom">
+        <div class="container">
+           <!-- Logo -->
+          <div class="navbar-header"  data-theme="container-header">
+            <a class="nav-link" href="index.html"><img src="" alt="logo"></a>
+          </div>
+           <!-- Navbar-items -->
+          <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a class="nav-link" href="index.html" data-i18="home">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#services" data-i18="services">Services</a>
+          </li>
+          <li>
+            <a class="nav-link" href="about.html" data-i18="about">About</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#gallery" data-i18="gallery">Gallery</a>
+          </li>
+          <li>
+            <a class="nav-link" href="contact.html" data-i18="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
     <main>
-        <section>
-            <h2>Meet Camille</h2>
-                <p>I was born and raised on Vancouver Island and don’t intend on leaving this beautiful coast anytime soon. Although I have a diploma in photojournalism, I like to believe that my "eye" comes from my mom pointing out beautiful moments throughout my childhood.</p>
-                <p>I like things with stories, be it an heirloom ring passed down through generations, a special stone found on a beach, or a tall cedar that has weathered countless storms.</p>
-                    <img src="Images/pexels-fabiotsu-1850731.png" width="400"alt="Camille Cardosa">
-                    <a class="link-button " href="#gallery">See Work</a>
-        </section>
-            
-        <section>
-            <h2>Mission Statement</h2>
-                <p>When I'm not busy capturing my clients’ stories, you can usually find me wandering with a camera in hand. One of my favourite parts of exploring new places is not knowing what I’ll find along the way. Some of my favourite photos ever captured came from spontaneous moments.I’m always drawn to the little things and am constantly seeking out these kinds of details — a field full of flowers, the perfect little cabin tucked away in the mountains or the way the clouds hug the trees. 
-                <p>I love that everyone has the ability to see the world through photography in such different ways and how it allows you to capture a fading moment into something that will last forever. I strive to create images that will stand the test of time and will be forever treasured many decades from now. 
-                </p>
-                    <img src="./Images/pexels-elijah-o'donnell-2409681.jpg" width="400" height="auto" alt="Mission statement">
-        </section>s
-            
-        <section>
-            <h2>The Area</h2>
-                <p>Vancouver Island is known for its beautiful, rugged landscapes as well as being home to hundreds of animal species such as whales, porpoises and wild salmon.</p>
-                <p>On the island you can find endless amounts of scenic views, hiking trails, and access to the ocean, rivers and lakes. It is a sanctuary for storm watching, camping and exploring.</p>
-                
-                    <img src="./Images/pexels-james-wheeler-3737033.jpg" width="400" height="auto" alt="The Area">
-                    <a class="link-button " href="#contact">Book Now</a>
-        </section>
-            
-        <section class="carousel">
-                <div class="carousel-container">
-                  <img src="./Images/pexels-jacub-gomez-1142948.jpg" width="400" height="auto" alt="gallery">
+        <section class="about_camille">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="content">
+                    <h2>Meet Camille</h2>
+                    <br>
+                    <p>I was born and raised on Vancouver Island and don’t intend on leaving this beautiful coast anytime soon. Although I have a diploma in photojournalism, I like to believe that my "eye" comes from my mom pointing out beautiful moments throughout my childhood.</p>
+                    <p>I like things with stories, be it an heirloom ring passed down through generations, a special stone found on a beach, or a tall cedar that has weathered countless storms.</p>
+                  </div>
                 </div>
-            
-                <!-- Back and Forward Buttons -->
-                    <a class="carousel-back" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="carousel-forward" onclick="plusSlides(1)">&#10095;</a>
+                <div class="col-12 col-lg-6">
+                    <img src="Images/pexels-fabiotsu-1850731.png" width="400"alt="Camille Cardosa">
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-12 col-lg-6">
+                    <a class="button" href="#gallery">See Work</a>
+                </div>
+            </div>
+        </div>
         </section>
+            
+        <section class="about_mission">
+            <div class="container">
+              <div class="row">
+                  <div class="col-12 col-12 col-lg-6">
+                        <img src="./Images/pexels-elijah-o'donnell-2409681.jpg" width="400" height="auto" alt="Mission statement">
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <div class="content">
+                          <h2>Mission Statement</h2>
+                            <br>
+                          <p>I’m always drawn to the little things and am constantly seeking out these kinds of details — a field full of flowers, the perfect little cabin tucked away in the mountains or the way the clouds hug the trees.
+                                  I love that everyone has the ability to see the world through photography in such different ways and how it allows you to capture a fading moment into something that will last forever.</p>
+                          <p>I strive to create images that will stand the test of time and will be forever treasured many decades from now. </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </section>
+            
+        <section class="about_area">
+          <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="content">
+                      <h2>The Area</h2>
+                      <br>
+                      <p>Vancouver Island is known for its beautiful, rugged landscapes as well as being home to hundreds of animal species such as whales, porpoises and wild salmon.</p>
+                      <p>On the island you can find endless amounts of scenic views, hiking trails, and access to the ocean, rivers and lakes. It is a sanctuary for storm watching, camping and exploring.</p>
+                    </div>
+                    <br>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <img src="./Images/pexels-james-wheeler-3737033.jpg" width="400" height="auto" alt="The Area">
+                  </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <a class="button" href="#contact">Book Now</a>
+                    </div>
+                  </div>
+              </div>
+        </section>
+            
+        <section class="home__carousel">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12">
+                    <div class="carousel">
+                      <div class="carousel-container">
+                            <img src="./Images/pexels-max-ravier-3403577.jpg"  alt="">
+                      </div>
+                      <div class="carousel-container">
+                          <img src="./Images/Abalone-gallery-3.jpg"  alt="">
+                      </div>
+                      <div class="carousel-container">
+                          <img src="./Images/Abalone-gallery-8.jpg"  alt="">
+                      </div>
+                      <div class="carousel-container">
+                          <img src="./Images/pexels-elina-sazonova-1838582.jpg"  alt="">
+                      </div>
+
+                     <!-- Back and Forward Buttons -->
+                     <a class="carousel-back" onclick="plusSlides(-1)">&#10094;</a>
+                     <a class="carousel-forward" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+
+    <script>
+      /*
+          Carousel based on this example https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/
+          with class names changed to work better with other components, and the design of the carousel
+          altered from the example, and auto-scrolling added
+      */
+      let slidePosition = 1;
+      SlideShow(slidePosition);
+
+      // forward/Back controls
+      function plusSlides(n) {
+        SlideShow((slidePosition += n));
+      }
+
+      //  images controls
+      function currentSlide(n) {
+        SlideShow((slidePosition = n));
+      }
+
+      function SlideShow(n) {
+        let slides = document.getElementsByClassName("carousel-container");
+        if (n > slides.length) {
+          slidePosition = 1;
+        }
+        if (n < 1) {
+          slidePosition = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slidePosition - 1].style.display = "block";
+      }
+
+      // Automatically scroll slides
+      window.setInterval(function () {
+        plusSlides(1);
+      }, 4000);
+    </script>
     </main>
+    <!-- Footer -->
+<footer>
+  
+    <div class="container"> 
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div class="card border-0">
+            <div class="card-body text-left">              
+              <a class="text-light d-block lead" href="tel:+1-778-248-9967"><i class="fa fa-phone mr-2"></i> +1-778-248-9967</a></br>
+              <a class="text-light d-block lead" href="mailto:cc.photography@gmail.com"><i class="fa fa-envelope mr-2"></i> cc.photography@gmail.com</a>
+              <BR></BR>
+              <p><b>Office Location:</b> 1234 Comox Ave</br>Unit 2 Comox, BC</p>
+            </div>
+          </div>
+        </div>       
+        <div class="col-12 col-sm-12 col-md- col-lg-6 col-xl-6">
+         <div class="card border-0">
+           
+          <br>
+          <br>
+            <div class="card-body text-center">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a class="nav-link" href="index.html" data-i18="home">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#services" data-i18="services">Services</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="about.html" data-i18="about">About</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#gallery" data-i18="gallery">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="contact.html" data-i18="contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>      
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 col-xl-4">
+          <div class="card border-0">
+            <div class="card-body text-right">
+                <a class="text-light" href="#"><i class="fab fa-facebook-square fa-fw fa-2x"></i></a>             
+                <a class="text-light" href="#"><i class="fab fa-twitter-square fa-fw fa-2x"></i></a>             
+                <a class="text-light" href="#"><i class="fab fa-instagram fa-fw fa-2x"></i></a>
+                <br></br>
+                <p>Get connected with </br>us on social Media</p>
+              
+            </div>
+          </div>
+        </div>	
+      </div>
+    </div>
+  
+</footer>
+
 </body>
