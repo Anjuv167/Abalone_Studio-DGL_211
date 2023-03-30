@@ -88,6 +88,38 @@
 .services .cta h1, .services .cta a {
   margin-top: 220px;
 }
+@media (min-width: 768px) {
+  .services__family {
+    width: 90%;
+    margin: 100px 0 50px;
+    height: 300px;
+  }
+}
+.services__family img {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .services__family img {
+    float: left;
+    position: relative;
+    width: 400px;
+    bottom: 100px;
+    left: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .services__family h1, .services__family h2, .services__family h3,
+.services__family h4, .services__family h5, .services__family h6 {
+    position: relative;
+    left: 600px;
+    bottom: 65px;
+  }
+}
+.services__family p {
+  margin-left: 500px;
+  max-width: 80ch;
+}
 
 html {
   box-sizing: border-box;

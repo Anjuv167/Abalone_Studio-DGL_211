@@ -12,4 +12,38 @@
             margin-top: 220px;
         }
     }
+
+    &__family {
+        @include md {
+            width: 90%;
+            margin: 100px 0 50px;
+            height: 300px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+
+            @include md {
+                float: left;
+                position: relative;
+                width: 400px;
+                bottom: 100px;
+                left: 50px;
+            }
+        }
+
+        @include headings {
+            @include md {
+                position: relative;
+                left: 600px;
+                bottom: 65px;
+            }
+        }
+
+        p {
+            margin-left: 500px;
+            max-width: 80ch;
+        }
+    }
 }
