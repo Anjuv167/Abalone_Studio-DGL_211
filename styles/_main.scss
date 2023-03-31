@@ -1,5 +1,9 @@
 .home {
 
+    p {
+        padding: 8px;
+    }
+
     &__services {
 
         background-color: $section-color;
@@ -25,7 +29,9 @@
         }
 
         @include headings {
+            padding: 8px;
             @include md {
+                padding: 0;
                 position: relative;
                 left: 420px;
                 bottom: 60px;

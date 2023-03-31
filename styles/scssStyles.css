@@ -1,3 +1,6 @@
+.home p {
+  padding: 8px;
+}
 .home__services {
   background-color: rgba(203, 137, 80, 0.4);
   margin-bottom: 40px;
@@ -21,9 +24,14 @@
     right: 25px;
   }
 }
+.home__services h1, .home__services h2, .home__services h3,
+.home__services h4, .home__services h5, .home__services h6 {
+  padding: 8px;
+}
 @media (min-width: 768px) {
   .home__services h1, .home__services h2, .home__services h3,
 .home__services h4, .home__services h5, .home__services h6 {
+    padding: 0;
     position: relative;
     left: 420px;
     bottom: 60px;
