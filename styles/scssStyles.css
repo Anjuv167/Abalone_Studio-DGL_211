@@ -399,10 +399,12 @@ body {
 h1, h2, h3,
 h4, h5, h6 {
   color: #000000;
+  font-family: "meno-banner", serif;
 }
 
 p {
   color: #126D7B;
+  font-family: "Nord, serif";
 }
 
 .button {
@@ -437,6 +439,9 @@ p {
 .cta h1 {
   color: white;
   margin-left: 3%;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "meno-banner", serif;
 }
 @media (min-width: 992px) {
   .cta h1 {

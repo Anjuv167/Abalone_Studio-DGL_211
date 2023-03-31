@@ -28,10 +28,12 @@ body {
 
 @include headings {
     color: $header-color;
+    font-family: "meno-banner", serif;
 }
 
 p {
     color: $font-color;
+    font-family: "Nord, serif";
 }
 
 .button {
@@ -65,6 +67,9 @@ p {
     h1 {
         color: white;
         margin-left: 3%;
+        font-style: italic;
+        font-weight: bold;
+        font-family: "meno-banner", serif;
 
         @include lg {
             margin-left: 5%;
