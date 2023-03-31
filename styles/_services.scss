@@ -53,4 +53,45 @@
             }
         }
     }
+
+    &__individual, &__events {
+
+        margin: 50px 0;
+        @include md {
+            width: 90%;
+            margin: 100px 0 50px;
+            height: 300px;
+        }
+
+        img {
+            display: block;
+            margin: 25px auto;
+
+            @include md {
+                margin: 0 auto;
+                float: right;
+                position: relative;
+                width: 400px;
+                bottom: 100px;
+                right: 50px;
+            }
+        }
+
+        @include headings {
+            margin-left: 25px;
+            @include md {
+                position: relative;
+                left: 50px;
+                bottom: 65px;
+            }
+        }
+
+        p {
+            margin-left: 25px;
+            max-width: 80ch;
+            @include md {
+                margin-left: 100px;
+            }
+        }
+    }
 }

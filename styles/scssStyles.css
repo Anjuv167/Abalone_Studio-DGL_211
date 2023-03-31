@@ -132,6 +132,53 @@
     margin-left: 500px;
   }
 }
+.services__individual, .services__events {
+  margin: 50px 0;
+}
+@media (min-width: 768px) {
+  .services__individual, .services__events {
+    width: 90%;
+    margin: 100px 0 50px;
+    height: 300px;
+  }
+}
+.services__individual img, .services__events img {
+  display: block;
+  margin: 25px auto;
+}
+@media (min-width: 768px) {
+  .services__individual img, .services__events img {
+    margin: 0 auto;
+    float: right;
+    position: relative;
+    width: 400px;
+    bottom: 100px;
+    right: 50px;
+  }
+}
+.services__individual h1, .services__individual h2, .services__individual h3,
+.services__individual h4, .services__individual h5, .services__individual h6, .services__events h1, .services__events h2, .services__events h3,
+.services__events h4, .services__events h5, .services__events h6 {
+  margin-left: 25px;
+}
+@media (min-width: 768px) {
+  .services__individual h1, .services__individual h2, .services__individual h3,
+.services__individual h4, .services__individual h5, .services__individual h6, .services__events h1, .services__events h2, .services__events h3,
+.services__events h4, .services__events h5, .services__events h6 {
+    position: relative;
+    left: 50px;
+    bottom: 65px;
+  }
+}
+.services__individual p, .services__events p {
+  margin-left: 25px;
+  max-width: 80ch;
+}
+@media (min-width: 768px) {
+  .services__individual p, .services__events p {
+    margin-left: 100px;
+  }
+}
 
 html {
   box-sizing: border-box;
