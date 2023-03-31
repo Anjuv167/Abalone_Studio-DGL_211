@@ -28,6 +28,16 @@
     height: 500px;
   }
 }
+@media (min-width: 992px) {
+  .home__services {
+    height: 400px;
+  }
+}
+@media (min-width: 1400px) {
+  .home__services {
+    height: 350px;
+  }
+}
 .home__services p {
   max-width: 90ch;
 }
