@@ -85,22 +85,22 @@
 .services .cta h1, .services .cta a {
   margin-top: 220px;
 }
-.services__family {
+.services__family, .services__couples {
   margin: 50px 0;
 }
 @media (min-width: 768px) {
-  .services__family {
+  .services__family, .services__couples {
     width: 90%;
     margin: 100px 0 50px;
     height: 300px;
   }
 }
-.services__family img {
+.services__family img, .services__couples img {
   display: block;
   margin: 25px auto;
 }
 @media (min-width: 768px) {
-  .services__family img {
+  .services__family img, .services__couples img {
     margin: 0 auto;
     float: left;
     position: relative;
@@ -110,23 +110,25 @@
   }
 }
 .services__family h1, .services__family h2, .services__family h3,
-.services__family h4, .services__family h5, .services__family h6 {
+.services__family h4, .services__family h5, .services__family h6, .services__couples h1, .services__couples h2, .services__couples h3,
+.services__couples h4, .services__couples h5, .services__couples h6 {
   margin-left: 25px;
 }
 @media (min-width: 768px) {
   .services__family h1, .services__family h2, .services__family h3,
-.services__family h4, .services__family h5, .services__family h6 {
+.services__family h4, .services__family h5, .services__family h6, .services__couples h1, .services__couples h2, .services__couples h3,
+.services__couples h4, .services__couples h5, .services__couples h6 {
     position: relative;
     left: 600px;
     bottom: 65px;
   }
 }
-.services__family p {
+.services__family p, .services__couples p {
   margin-left: 25px;
   max-width: 80ch;
 }
 @media (min-width: 768px) {
-  .services__family p {
+  .services__family p, .services__couples p {
     margin-left: 500px;
   }
 }
