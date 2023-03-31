@@ -1,5 +1,27 @@
 .gallery {
 
+    h1 {
+        text-align: center;
+    }
+
+    &__learn {
+        width: 90%;
+        margin: 0 auto;
+
+        @include md {
+            width: 60%;
+        }
+
+        p {
+            margin: 8px auto 0;
+            text-align: center;
+        }
+    
+        .button {
+            margin: 32px auto;
+        }
+    }
+
     .carousel-container div {
         display: flex;
         flex-wrap: wrap;

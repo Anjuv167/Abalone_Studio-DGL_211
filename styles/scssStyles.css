@@ -200,6 +200,25 @@
   }
 }
 
+.gallery h1 {
+  text-align: center;
+}
+.gallery__learn {
+  width: 90%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .gallery__learn {
+    width: 60%;
+  }
+}
+.gallery__learn p {
+  margin: 8px auto 0;
+  text-align: center;
+}
+.gallery__learn .button {
+  margin: 32px auto;
+}
 .gallery .carousel-container div {
   display: flex;
   flex-wrap: wrap;
