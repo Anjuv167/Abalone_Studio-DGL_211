@@ -29,6 +29,11 @@
     bottom: 60px;
   }
 }
+.home__services .button {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
 .home .cta {
   height: 300px;
   background-image: url("../Images/Home-main.jpg");
