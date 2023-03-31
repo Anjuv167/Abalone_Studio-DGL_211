@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-i18="page-title">Camille Cardosa West Coast Photography</title>
+  <title data-i18="page-title">Gallery - Camille Cardosa West Coast Photography</title>
   <meta name="description"
-    content="Camille Cardosa, photographer for portraits, events, weddings, and landscapes along the west coast, British Columbia">
+    content="Online photo gallery of landscape, portrait, & event photos from the west coast of British Columbia">
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/scssStyles.css">
   <link rel="stylesheet" href="./styles/bootstrap.css">
@@ -61,87 +61,7 @@
         </ul>
     </nav>
   </header>
-  <main class="home">
-    <section class="cta">
-      <h1>Camille Cardosa Photography</h1>
-      <a class="button" href="#contact">Book Now</a>
-    </section>
-    <section class="home__services clearfix">
-      <h2>Photography In Nature</h2>
-      <img src="./Images/pexels-gonzalo-álvarez-balcazar-14364650.jpg" width="400" height="auto"
-        alt="Photography In Nature">
-      <p>I feel most at peace with myself and with life itself when I'm standing in front of landscapes with rocks,
-        trees, reflecting water, and parting clouds. I feel compelled to make an effort to convey the sensation of
-        amazement I experience visually; I have a feeling that you can relate to this.</p>
-      <p class="quote">"Photography is by nature
-        a documentary art."</p>
-    </section>
-    <a class="button centered" href="#services">Services</a>
-    <section class="home__carousel">
-      <div class="carousel">
-        <div class="carousel-container">
-          <img src="./Images/pexels-max-ravier-3403577.jpg" width="200" height="auto" alt="">
-        </div>
-        <div class="carousel-container">
-          <img src="./Images/Abalone-gallery-3.jpg" width="200" height="auto" alt="">
-        </div>
-        <div class="carousel-container">
-          <img src="./Images/Abalone-gallery-8.jpg" width="200" height="auto" alt="">
-        </div>
-        <div class="carousel-container">
-          <img src="./Images/pexels-elina-sazonova-1838582.jpg" width="200" height="auto" alt="">
-        </div>
-
-        <!-- Back and Forward Buttons -->
-        <a class="carousel-back" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="carousel-forward" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-    </section>
-    <section class="home__gallery clearfix">
-      <h2>Coastal, Rugged, & Natural</h2>
-      <p>Beautiful landscapes and treasured moments, all set against the natural backdrop of the natural, rugged an
-        unpredictable west coast.</p>
-      <img src="./Images/pexels-oliver-sjöström-1020016.jpg" width="400" height="auto" alt="">
-      <a class="button" href="#gallery">View Gallery</a>
-    </section>
-    <script>
-      /*
-          Carousel based on this example https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/
-          with class names changed to work better with other components, and the design of the carousel
-          altered from the example, and auto-scrolling added
-      */
-      let slidePosition = 1;
-      SlideShow(slidePosition);
-
-      // forward/Back controls
-      function plusSlides(n) {
-        SlideShow((slidePosition += n));
-      }
-
-      //  images controls
-      function currentSlide(n) {
-        SlideShow((slidePosition = n));
-      }
-
-      function SlideShow(n) {
-        let slides = document.getElementsByClassName("carousel-container");
-        if (n > slides.length) {
-          slidePosition = 1;
-        }
-        if (n < 1) {
-          slidePosition = slides.length;
-        }
-        for (let i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slides[slidePosition - 1].style.display = "block";
-      }
-
-      // Automatically scroll slides
-      window.setInterval(function () {
-        plusSlides(1);
-      }, 4000);
-    </script>
+  <main class="gallery">
   </main>
 
   <!-- Footer -->
