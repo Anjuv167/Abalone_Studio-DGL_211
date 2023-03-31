@@ -105,5 +105,102 @@
             <a class="carousel-back" onclick="plusSlides(-1)">&#10094;</a>
             <a class="carousel-forward" onclick="plusSlides(1)">&#10095;</a>
         </section>
+
+    <script>
+      /*
+          Carousel based on this example https://www.section.io/engineering-education/how-to-make-an-image-carousel-for-your-website/
+          with class names changed to work better with other components, and the design of the carousel
+          altered from the example, and auto-scrolling added
+      */
+      let slidePosition = 1;
+      SlideShow(slidePosition);
+
+      // forward/Back controls
+      function plusSlides(n) {
+        SlideShow((slidePosition += n));
+      }
+
+      //  images controls
+      function currentSlide(n) {
+        SlideShow((slidePosition = n));
+      }
+
+      function SlideShow(n) {
+        let slides = document.getElementsByClassName("carousel-container");
+        if (n > slides.length) {
+          slidePosition = 1;
+        }
+        if (n < 1) {
+          slidePosition = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slidePosition - 1].style.display = "block";
+      }
+
+      // Automatically scroll slides
+      window.setInterval(function () {
+        plusSlides(1);
+      }, 4000);
+    </script>
     </main>
+    <!-- Footer -->
+<footer>
+  
+    <div class="container"> 
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+          <div class="card border-0">
+            <div class="card-body text-left">              
+              <a class="text-light d-block lead" href="tel:+1-778-248-9967"><i class="fa fa-phone mr-2"></i> +1-778-248-9967</a></br>
+              <a class="text-light d-block lead" href="mailto:cc.photography@gmail.com"><i class="fa fa-envelope mr-2"></i> cc.photography@gmail.com</a>
+              <BR></BR>
+              <p><b>Office Location:</b> 1234 Comox Ave</br>Unit 2 Comox, BC</p>
+            </div>
+          </div>
+        </div>       
+        <div class="col-12 col-sm-12 col-md- col-lg-6 col-xl-6">
+         <div class="card border-0">
+           
+          <br>
+          <br>
+            <div class="card-body text-center">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a class="nav-link" href="index.html" data-i18="home">Home</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#services" data-i18="services">Services</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="about.html" data-i18="about">About</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#gallery" data-i18="gallery">Gallery</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="contact.html" data-i18="contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>      
+        <div class="col-12 col-sm-12 col-md-6 col-lg-2 col-xl-4">
+          <div class="card border-0">
+            <div class="card-body text-right">
+                <a class="text-light" href="#"><i class="fab fa-facebook-square fa-fw fa-2x"></i></a>             
+                <a class="text-light" href="#"><i class="fab fa-twitter-square fa-fw fa-2x"></i></a>             
+                <a class="text-light" href="#"><i class="fab fa-instagram fa-fw fa-2x"></i></a>
+                <br></br>
+                <p>Get connected with </br>us on social Media</p>
+              
+            </div>
+          </div>
+        </div>	
+      </div>
+    </div>
+  
+</footer>
+
 </body>

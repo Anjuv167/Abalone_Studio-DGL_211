@@ -156,7 +156,6 @@ p {
   font: normal 400 2.0rem/3.25rem "Inter-Regular";
 }
 
-
 /* Header */
 
 /* footer */
@@ -174,7 +173,140 @@ footer a.text-light {
   color: #fff;
 }
 
-footer a.text-light:hover {
-  color: #fed136 !important;
-  text-decoration: none;
+footer a.text-light:hover { 
+  color: #fed136!important; 
+  text-decoration: none; 
+}
+
+
+/* About Page */
+
+.about_camille {
+  padding: 50px 0px ;
+}
+
+.about_camille .content {
+    height: 100%;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+.about_camille img {
+    height: 100%; 
+    min-width: 500px; 
+}  
+
+.about_mission {
+  padding: 20px 0px ;
+}
+
+.about_mission .content{
+    height: 100%;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.about_mission img {
+    min-width: 500px;  
+    padding: 20px 0px;
+}
+
+.about_area {
+    padding: 20px 0px ;
+}
+
+.about_area .content {
+    height: 100%;
+    align-items: center;
+    padding: 35px 0px;
+}
+
+.about_area img {
+    height: 100%; 
+    padding: 40px 0px ;
+    min-width: 500px; 
+}
+
+/* Contact Page */
+
+.contact {
+  padding: 50px 0px ;
+}
+
+.contact .content {
+  height: 100%;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.contact img {
+  min-width: none;;
+}
+
+/* Contact Form */
+
+.get-in-touch {
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+
+}
+.get-in-touch .title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2.2em;
+  line-height: 48px;
+  padding-bottom: 48px;
+     
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text{
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #010008;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 20px 0px;
+  font-weight: 400;
+}
+
+.contact-form p{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.form-check {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contact-form .input-text:focus {
+  outline: none;
+}
+
+.contact-form .input-text:focus ,
+.contact-form .input-text.not-empty {
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+}
+
+.contact-form .form-check-input {
+  margin: 0 20px ;
+  position: relative;
+}
+
+.contact-form .button {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
