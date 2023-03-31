@@ -25,8 +25,8 @@
   .home__services h1, .home__services h2, .home__services h3,
 .home__services h4, .home__services h5, .home__services h6 {
     position: relative;
-    left: 390px;
-    bottom: 35px;
+    left: 420px;
+    bottom: 60px;
   }
 }
 .home .cta {
