@@ -200,6 +200,14 @@
   }
 }
 
+.gallery .carousel-container div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery .carousel-container div img {
+  padding: 4px;
+}
 .gallery__images {
   display: flex;
   flex-wrap: wrap;

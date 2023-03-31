@@ -1,4 +1,15 @@
 .gallery {
+
+    .carousel-container div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        img {
+            padding: 4px;
+        }
+    }
+
     &__images {
         display: flex;
         flex-wrap: wrap;
