@@ -189,6 +189,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-image: url("../Images/Abalone-texture.jpg");
+}
+
 .clearfix::after {
   content: "";
   clear: both;
