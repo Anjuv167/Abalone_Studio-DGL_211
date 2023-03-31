@@ -211,6 +211,12 @@
 .gallery__images {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .gallery__images {
+    width: 90%;
+  }
 }
 .gallery__images img {
   width: 100%;
@@ -221,11 +227,18 @@
   flex-basis: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 @media (min-width: 768px) {
   .gallery__column {
     flex-basis: 33%;
   }
+}
+.gallery__column img:first-of-type {
+  margin-top: 0;
+}
+.gallery__column img:last-of-type {
+  margin-bottom: 0;
 }
 .gallery__pair {
   display: flex;
