@@ -46,6 +46,11 @@
 
         width: 90%;
         margin: 0 auto;
+        position: relative;
+
+        @include md {
+            margin: 0 auto;
+        }
 
         img {
             display: block;
@@ -69,7 +74,8 @@
             margin:20px auto;
 
             @include md {
-                margin: 20px 0;
+                position: absolute;
+                bottom:200px;
             }
         }
     }

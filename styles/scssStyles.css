@@ -39,6 +39,12 @@
 .home__gallery {
   width: 90%;
   margin: 0 auto;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .home__gallery {
+    margin: 0 auto;
+  }
 }
 .home__gallery img {
   display: block;
@@ -63,7 +69,8 @@
 }
 @media (min-width: 768px) {
   .home__gallery .button {
-    margin: 20px 0;
+    position: absolute;
+    bottom: 200px;
   }
 }
 .home__carousel {
