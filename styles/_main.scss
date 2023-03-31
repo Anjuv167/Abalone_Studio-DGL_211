@@ -1,5 +1,21 @@
 .home {
 
+    section {
+        @include md {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @include lg {
+            width: 80%;
+        }
+
+        @include xxl {
+            width: 70%;
+        }
+    }
+
     p {
         padding: 8px;
     }
@@ -8,12 +24,28 @@
 
         background-color: $section-color;
 
+
         margin-bottom: 40px;
 
         @include md {
-            width: 90%;
             margin: 100px auto 50px;
-            height: 300px;
+            height: 500px;
+        }
+
+        p {
+            max-width: 90ch;
+        }
+
+
+        .quote {
+            @include md {
+                max-width: 30ch;
+                margin-left: auto;
+            }
+
+            @include xxl {
+                margin-left: 30vw;
+            }
         }
 
         img {
@@ -44,6 +76,7 @@
     }
 
     .cta {
+        width: 100%;
         height: 300px;
         background-image: url("../Images/Home-main.jpg");
 
@@ -54,12 +87,15 @@
 
     &__gallery {
 
-        width: 90%;
         margin: 0 auto;
         position: relative;
 
         @include md {
             margin: 0 auto;
+        }
+
+        @include xxl {
+            width: 80%;
         }
 
         img {
@@ -91,7 +127,6 @@
     }
 
     &__carousel {
-        width: 90%;
         margin: 40px auto;
 
         img {
