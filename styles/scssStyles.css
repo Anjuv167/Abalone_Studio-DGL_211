@@ -116,13 +116,21 @@
     right: 25px;
   }
 }
-.home__services h1, .home__services h2, .home__services h3,
-.home__services h4, .home__services h5, .home__services h6 {
+.home__services h1,
+.home__services h2,
+.home__services h3,
+.home__services h4,
+.home__services h5,
+.home__services h6 {
   padding: 8px;
 }
 @media (min-width: 768px) {
-  .home__services h1, .home__services h2, .home__services h3,
-.home__services h4, .home__services h5, .home__services h6 {
+  .home__services h1,
+.home__services h2,
+.home__services h3,
+.home__services h4,
+.home__services h5,
+.home__services h6 {
     padding: 0;
     position: relative;
     left: 420px;
@@ -139,7 +147,8 @@
   height: 300px;
   background-image: url("../Images/Home-main.jpg");
 }
-.home .cta h1, .home .cta a {
+.home .cta h1,
+.home .cta a {
   margin-top: 120px;
 }
 .home .cta h1 {
@@ -328,15 +337,31 @@
     bottom: 125px;
   }
 }
-.services__family h1, .services__family h2, .services__family h3,
-.services__family h4, .services__family h5, .services__family h6, .services__couples h1, .services__couples h2, .services__couples h3,
-.services__couples h4, .services__couples h5, .services__couples h6 {
+.services__family h1,
+.services__family h2,
+.services__family h3,
+.services__family h4,
+.services__family h5,
+.services__family h6, .services__couples h1,
+.services__couples h2,
+.services__couples h3,
+.services__couples h4,
+.services__couples h5,
+.services__couples h6 {
   text-align: center;
 }
 @media (min-width: 992px) {
-  .services__family h1, .services__family h2, .services__family h3,
-.services__family h4, .services__family h5, .services__family h6, .services__couples h1, .services__couples h2, .services__couples h3,
-.services__couples h4, .services__couples h5, .services__couples h6 {
+  .services__family h1,
+.services__family h2,
+.services__family h3,
+.services__family h4,
+.services__family h5,
+.services__family h6, .services__couples h1,
+.services__couples h2,
+.services__couples h3,
+.services__couples h4,
+.services__couples h5,
+.services__couples h6 {
     text-align: left;
     position: relative;
     left: 50vw;
@@ -387,15 +412,31 @@
     bottom: 125px;
   }
 }
-.services__individual h1, .services__individual h2, .services__individual h3,
-.services__individual h4, .services__individual h5, .services__individual h6, .services__events h1, .services__events h2, .services__events h3,
-.services__events h4, .services__events h5, .services__events h6 {
+.services__individual h1,
+.services__individual h2,
+.services__individual h3,
+.services__individual h4,
+.services__individual h5,
+.services__individual h6, .services__events h1,
+.services__events h2,
+.services__events h3,
+.services__events h4,
+.services__events h5,
+.services__events h6 {
   text-align: center;
 }
 @media (min-width: 992px) {
-  .services__individual h1, .services__individual h2, .services__individual h3,
-.services__individual h4, .services__individual h5, .services__individual h6, .services__events h1, .services__events h2, .services__events h3,
-.services__events h4, .services__events h5, .services__events h6 {
+  .services__individual h1,
+.services__individual h2,
+.services__individual h3,
+.services__individual h4,
+.services__individual h5,
+.services__individual h6, .services__events h1,
+.services__events h2,
+.services__events h3,
+.services__events h4,
+.services__events h5,
+.services__events h6 {
     text-align: left;
     position: relative;
     left: 10vw;
@@ -504,8 +545,12 @@ main {
   display: table;
 }
 
-h1, h2, h3,
-h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000000;
   font-family: "meno-banner", serif;
 }

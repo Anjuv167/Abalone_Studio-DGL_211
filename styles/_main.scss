@@ -70,6 +70,7 @@
 
         @include headings {
             padding: 8px;
+
             @include md {
                 padding: 0;
                 position: relative;
@@ -88,7 +89,8 @@
         height: 300px;
         background-image: url("../Images/Home-main.jpg");
 
-        h1, a {
+        h1,
+        a {
             margin-top: 120px;
         }
 
@@ -148,12 +150,13 @@
         p {
             max-width: 30ch;
         }
+
         .button {
-            margin:20px auto;
+            margin: 20px auto;
 
             @include md {
                 position: absolute;
-                bottom:200px;
+                bottom: 200px;
             }
         }
     }
