@@ -1,0 +1,56 @@
+.header {
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 1;
+    width: 100%;
+    height: fit-content;
+
+    @include md {
+        height: $navbar-height;
+    }
+
+    .navbar {
+        background-color: rgb(18, 78, 100);
+        height: 100%;
+
+        &-brand {
+            position: relative;
+            bottom: 25px;
+            right: 25px;
+        }
+
+        &-toggle {
+            height: $navbar-height;
+            margin: 0 24px;
+        }
+    }
+
+    .nav {
+        li a {
+            font-family: 'nord', sans-serif;
+        color: rgb(240, 241, 241);
+
+        @include md {
+            margin: 24px 0;
+        }
+
+        &:hover {
+            color: rgb(2, 24, 24);
+        }
+        }
+    }
+
+    .nav li a {
+        font-family: 'nord', sans-serif;
+        color: rgb(240, 241, 241);
+
+        &:hover {
+            color: rgb(2, 24, 24);
+        }
+    }
+
+    .icon-bar {
+        background-color: rgb(240, 241, 241);
+    }
+}

@@ -1,3 +1,54 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (min-width: 768px) {
+  .header {
+    height: 90px;
+  }
+}
+.header .navbar {
+  background-color: rgb(18, 78, 100);
+  height: 100%;
+}
+.header .navbar-brand {
+  position: relative;
+  bottom: 25px;
+  right: 25px;
+}
+.header .navbar-toggle {
+  height: 90px;
+  margin: 0 24px;
+}
+.header .nav li a {
+  font-family: "nord", sans-serif;
+  color: rgb(240, 241, 241);
+}
+@media (min-width: 768px) {
+  .header .nav li a {
+    margin: 24px 0;
+  }
+}
+.header .nav li a:hover {
+  color: rgb(2, 24, 24);
+}
+.header .nav li a {
+  font-family: "nord", sans-serif;
+  color: rgb(240, 241, 241);
+}
+.header .nav li a:hover {
+  color: rgb(2, 24, 24);
+}
+.header .icon-bar {
+  background-color: rgb(240, 241, 241);
+}
+
 @media (min-width: 768px) {
   .home section {
     width: 90%;
@@ -388,6 +439,10 @@ html {
 
 body {
   background-image: url("../Images/Abalone-texture.jpg");
+}
+
+main {
+  margin-top: 90px;
 }
 
 .clearfix::after {

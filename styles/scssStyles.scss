@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "header";
 @import "main";
 @import "services";
 @import "gallery";
@@ -17,6 +18,10 @@ html {
 
 body {
     background-image: url("../Images/Abalone-texture.jpg");
+}
+
+main {
+    margin-top: $navbar-height;
 }
 
 // clearfix Hack
