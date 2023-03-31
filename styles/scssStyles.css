@@ -94,23 +94,67 @@
   width: 100%;
 }
 
+@media (min-width: 1200px) {
+  .services .packages {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1400px) {
+  .services .packages {
+    width: 80%;
+  }
+}
 .services section {
   background-color: rgba(203, 137, 80, 0.4);
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .services section {
+    width: 95%;
+  }
+}
+.services section p {
+  max-width: 50ch;
 }
 .services .cta {
-  height: 500px;
+  width: 100%;
+  height: 300px;
   background-image: url("../Images/Abalone-services-1.jpg");
+  background-size: cover;
   background-position: center;
 }
-.services .cta h1, .services .cta a {
-  margin-top: 220px;
+@media (min-width: 768px) {
+  .services .cta {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .services .cta {
+    height: 500px;
+  }
+}
+.services .cta h1,
+.services .cta a {
+  margin-top: 100px;
+}
+@media (min-width: 768px) {
+  .services .cta h1,
+.services .cta a {
+    margin-top: 170px;
+  }
+}
+@media (min-width: 1200px) {
+  .services .cta h1,
+.services .cta a {
+    margin-top: 220px;
+  }
 }
 .services__family, .services__couples {
   margin: 50px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .services__family, .services__couples {
-    width: 90%;
     margin: 100px 0 50px;
     height: 300px;
   }
@@ -119,45 +163,57 @@
   display: block;
   margin: 25px auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .services__family img, .services__couples img {
     margin: 0 auto;
     float: left;
     position: relative;
-    width: 400px;
+    width: 30%;
+    min-width: 400px;
+    max-width: 500px;
     bottom: 100px;
     left: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .services__family img, .services__couples img {
+    bottom: 125px;
   }
 }
 .services__family h1, .services__family h2, .services__family h3,
 .services__family h4, .services__family h5, .services__family h6, .services__couples h1, .services__couples h2, .services__couples h3,
 .services__couples h4, .services__couples h5, .services__couples h6 {
-  margin-left: 25px;
+  text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .services__family h1, .services__family h2, .services__family h3,
 .services__family h4, .services__family h5, .services__family h6, .services__couples h1, .services__couples h2, .services__couples h3,
 .services__couples h4, .services__couples h5, .services__couples h6 {
+    text-align: left;
     position: relative;
-    left: 600px;
+    left: 50vw;
     bottom: 65px;
   }
 }
 .services__family p, .services__couples p {
-  margin-left: 25px;
+  margin-left: 5px;
   max-width: 80ch;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .services__family p, .services__couples p {
     margin-left: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .services__family p, .services__couples p {
+    margin-left: 600px;
   }
 }
 .services__individual, .services__events {
   margin: 50px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .services__individual, .services__events {
-    width: 90%;
     margin: 100px 0 50px;
     height: 300px;
   }
@@ -166,27 +222,35 @@
   display: block;
   margin: 25px auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .services__individual img, .services__events img {
     margin: 0 auto;
     float: right;
     position: relative;
-    width: 400px;
+    width: 30%;
+    min-width: 400px;
+    max-width: 500px;
     bottom: 100px;
     right: 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .services__individual img, .services__events img {
+    bottom: 125px;
   }
 }
 .services__individual h1, .services__individual h2, .services__individual h3,
 .services__individual h4, .services__individual h5, .services__individual h6, .services__events h1, .services__events h2, .services__events h3,
 .services__events h4, .services__events h5, .services__events h6 {
-  margin-left: 25px;
+  text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .services__individual h1, .services__individual h2, .services__individual h3,
 .services__individual h4, .services__individual h5, .services__individual h6, .services__events h1, .services__events h2, .services__events h3,
 .services__events h4, .services__events h5, .services__events h6 {
+    text-align: left;
     position: relative;
-    left: 50px;
+    left: 10vw;
     bottom: 65px;
   }
 }
@@ -194,7 +258,7 @@
   margin-left: 25px;
   max-width: 80ch;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .services__individual p, .services__events p {
     margin-left: 100px;
   }
@@ -272,7 +336,9 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -328,8 +394,28 @@ p {
   color: white;
   margin-left: 3%;
 }
+@media (min-width: 992px) {
+  .cta h1 {
+    margin-left: 5%;
+  }
+}
+@media (min-width: 1400px) {
+  .cta h1 {
+    margin-left: 10%;
+  }
+}
 .cta a {
   margin-right: 3%;
+}
+@media (min-width: 992px) {
+  .cta a {
+    margin-right: 5%;
+  }
+}
+@media (min-width: 1400px) {
+  .cta a {
+    margin-right: 10%;
+  }
 }
 
 .carousel {

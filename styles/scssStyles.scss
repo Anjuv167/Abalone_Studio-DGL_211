@@ -3,11 +3,15 @@
 @import "main";
 @import "services";
 @import "gallery";
+
 html {
     box-sizing: border-box;
     font-size: 16px;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -41,7 +45,8 @@ p {
     padding: 10px 40px;
     border-radius: 20px;
 
-    &:hover, &:focus-visible {
+    &:hover,
+    &:focus-visible {
         background-color: $button-hovered;
     }
 }
@@ -52,19 +57,35 @@ p {
 
 .cta {
     background-repeat: no-repeat;
-        background-size: 100%;
+    background-size: 100%;
 
-        display: flex;
-        justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
-        h1 {
-            color: white;
-            margin-left: 3%;
+    h1 {
+        color: white;
+        margin-left: 3%;
+
+        @include lg {
+            margin-left: 5%;
         }
 
-        a {
-            margin-right: 3%;
+        @include xxl {
+            margin-left: 10%;
         }
+    }
+
+    a {
+        margin-right: 3%;
+
+        @include lg {
+            margin-right: 5%;
+        }
+
+        @include xxl {
+            margin-right: 10%;
+        }
+    }
 }
 
 .carousel {
@@ -76,7 +97,8 @@ p {
         display: none;
     }
 
-    &-back, &-forward {
+    &-back,
+    &-forward {
         cursor: pointer;
         position: absolute;
         top: 48%;
@@ -90,7 +112,8 @@ p {
         border-radius: 0 5px 5px 0;
         user-select: none;
 
-        &:hover, &:focus-visible {
+        &:hover,
+        &:focus-visible {
             background-color: black;
         }
     }
