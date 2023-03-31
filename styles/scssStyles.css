@@ -141,6 +141,32 @@
 .home .cta h1, .home .cta a {
   margin-top: 120px;
 }
+.home .cta h1 {
+  margin-left: 3%;
+}
+@media (min-width: 992px) {
+  .home .cta h1 {
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1400px) {
+  .home .cta h1 {
+    margin-left: 15%;
+  }
+}
+.home .cta a {
+  margin-right: 3%;
+}
+@media (min-width: 992px) {
+  .home .cta a {
+    margin-right: 10%;
+  }
+}
+@media (min-width: 1400px) {
+  .home .cta a {
+    margin-right: 15%;
+  }
+}
 .home__gallery {
   margin: 0 auto;
   position: relative;
@@ -243,6 +269,32 @@
   .services .cta h1,
 .services .cta a {
     margin-top: 220px;
+  }
+}
+.services .cta h1 {
+  margin-left: 3%;
+}
+@media (min-width: 992px) {
+  .services .cta h1 {
+    margin-left: 10%;
+  }
+}
+@media (min-width: 1400px) {
+  .services .cta h1 {
+    margin-left: 15%;
+  }
+}
+.services .cta a {
+  margin-right: 3%;
+}
+@media (min-width: 992px) {
+  .services .cta a {
+    margin-right: 10%;
+  }
+}
+@media (min-width: 1400px) {
+  .services .cta a {
+    margin-right: 15%;
   }
 }
 .services__family, .services__couples {
@@ -497,29 +549,6 @@ p {
   font-style: italic;
   font-weight: bold;
   font-family: "meno-banner", serif;
-}
-@media (min-width: 992px) {
-  .cta h1 {
-    margin-left: 5%;
-  }
-}
-@media (min-width: 1400px) {
-  .cta h1 {
-    margin-left: 10%;
-  }
-}
-.cta a {
-  margin-right: 3%;
-}
-@media (min-width: 992px) {
-  .cta a {
-    margin-right: 5%;
-  }
-}
-@media (min-width: 1400px) {
-  .cta a {
-    margin-right: 10%;
-  }
 }
 
 .carousel {

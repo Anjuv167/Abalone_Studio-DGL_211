@@ -91,6 +91,30 @@
         h1, a {
             margin-top: 120px;
         }
+
+        h1 {
+            margin-left: 3%;
+
+            @include lg {
+                margin-left: 10%;
+            }
+
+            @include xxl {
+                margin-left: 15%;
+            }
+        }
+
+        a {
+            margin-right: 3%;
+
+            @include lg {
+                margin-right: 10%;
+            }
+
+            @include xxl {
+                margin-right: 15%;
+            }
+        }
     }
 
     &__gallery {

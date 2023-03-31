@@ -75,27 +75,10 @@ p {
         font-style: italic;
         font-weight: bold;
         font-family: "meno-banner", serif;
-
-        @include lg {
-            margin-left: 5%;
-        }
-
-        @include xxl {
-            margin-left: 10%;
-        }
     }
 
-    a {
-        margin-right: 3%;
 
-        @include lg {
-            margin-right: 5%;
-        }
-
-        @include xxl {
-            margin-right: 10%;
-        }
-    }
+    
 }
 
 .carousel {
