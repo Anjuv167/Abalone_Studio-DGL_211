@@ -60,6 +60,8 @@
             display: block;
             margin: 0 auto;
 
+            height: auto;
+
             @include md {
                 float: left;
                 position: relative;
@@ -166,6 +168,7 @@
 
         img {
             width: 100%;
+            height: auto;
         }
     }
 }

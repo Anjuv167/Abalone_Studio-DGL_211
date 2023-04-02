@@ -107,6 +107,7 @@
 .home__services img {
   display: block;
   margin: 0 auto;
+  height: auto;
 }
 @media (min-width: 768px) {
   .home__services img {
@@ -223,6 +224,7 @@
 }
 .home__carousel img {
   width: 100%;
+  height: auto;
 }
 
 @media (min-width: 1200px) {
