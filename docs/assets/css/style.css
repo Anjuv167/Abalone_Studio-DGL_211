@@ -227,6 +227,9 @@
   height: auto;
 }
 
+.services img {
+  height: auto;
+}
 @media (min-width: 1200px) {
   .services .packages {
     width: 90%;

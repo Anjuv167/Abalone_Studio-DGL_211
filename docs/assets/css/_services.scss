@@ -1,5 +1,9 @@
 .services {
 
+    img {
+        height: auto;
+    }
+
     .packages {
         @include xl {
             width: 90%;
