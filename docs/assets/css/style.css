@@ -458,6 +458,9 @@
   }
 }
 
+.gallery img {
+  height: auto;
+}
 .gallery h1 {
   text-align: center;
 }
