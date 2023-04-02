@@ -40,6 +40,10 @@
             height: 350px;
         }
 
+        h2 {
+            font-family: 'meno-banner', sans-serif;
+        }
+
         p {
             max-width: 90ch;
         }
@@ -125,13 +129,30 @@
 
         margin: 0 auto;
         position: relative;
+        width: 90%;
 
         @include md {
             margin: 0 auto;
         }
 
-        @include xxl {
+        @include lg {
             width: 80%;
+        }
+
+        @include xxl {
+            width: 60%;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-family: 'meno-banner', sans-serif;
+            padding-left: 8px;
+            margin-bottom: 24px;
+            font-size: 4rem;
+
+            @include md {
+                margin-bottom: 48px;
+            }
         }
 
         img {

@@ -90,6 +90,9 @@
     height: 350px;
   }
 }
+.home__services h2 {
+  font-family: "meno-banner", sans-serif;
+}
 .home__services p {
   max-width: 90ch;
 }
@@ -181,15 +184,33 @@
 .home__gallery {
   margin: 0 auto;
   position: relative;
+  width: 90%;
 }
 @media (min-width: 768px) {
   .home__gallery {
     margin: 0 auto;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .home__gallery {
     width: 80%;
+  }
+}
+@media (min-width: 1400px) {
+  .home__gallery {
+    width: 60%;
+  }
+}
+.home__gallery h2 {
+  font-weight: bold;
+  font-family: "meno-banner", sans-serif;
+  padding-left: 8px;
+  margin-bottom: 24px;
+  font-size: 4rem;
+}
+@media (min-width: 768px) {
+  .home__gallery h2 {
+    margin-bottom: 48px;
   }
 }
 .home__gallery img {
@@ -560,7 +581,7 @@ h4,
 h5,
 h6 {
   color: #000000;
-  font-family: "meno-banner", serif;
+  font-family: "meno-banner", sans-serif;
 }
 
 p {
