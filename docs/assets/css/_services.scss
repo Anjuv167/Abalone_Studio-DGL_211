@@ -1,5 +1,19 @@
 .services {
 
+    p {
+        font-size: 1.6rem;
+    }
+
+    .quote {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-family: 'meno-banner', sans-serif;
+        font-weight: bold;
+        font-size: 4rem;
+    }
+
     img {
         height: auto;
     }
@@ -119,7 +133,11 @@
                 text-align: left;
                 position: relative;
                 left: 50vw;
-                bottom: 65px;
+                bottom: 70px;
+            }
+
+            @include xl {
+                left: 45vw;
             }
         }
 
@@ -173,8 +191,8 @@
             @include lg {
                 text-align: left;
                 position: relative;
-                left: 10vw;
-                bottom: 65px;
+                left: 5vw;
+                bottom: 70px;
             }
         }
 

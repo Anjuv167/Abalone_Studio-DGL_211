@@ -92,6 +92,7 @@
 }
 .home__services h2 {
   font-family: "meno-banner", sans-serif;
+  font-weight: bold;
 }
 .home__services p {
   max-width: 90ch;
@@ -248,6 +249,17 @@
   height: auto;
 }
 
+.services p {
+  font-size: 1.6rem;
+}
+.services .quote {
+  font-size: 2rem;
+}
+.services h2 {
+  font-family: "meno-banner", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+}
 .services img {
   height: auto;
 }
@@ -391,7 +403,22 @@
     text-align: left;
     position: relative;
     left: 50vw;
-    bottom: 65px;
+    bottom: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .services__family h1,
+.services__family h2,
+.services__family h3,
+.services__family h4,
+.services__family h5,
+.services__family h6, .services__couples h1,
+.services__couples h2,
+.services__couples h3,
+.services__couples h4,
+.services__couples h5,
+.services__couples h6 {
+    left: 45vw;
   }
 }
 .services__family p, .services__couples p {
@@ -465,8 +492,8 @@
 .services__events h6 {
     text-align: left;
     position: relative;
-    left: 10vw;
-    bottom: 65px;
+    left: 5vw;
+    bottom: 70px;
   }
 }
 .services__individual p, .services__events p {
