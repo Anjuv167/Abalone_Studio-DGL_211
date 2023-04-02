@@ -506,9 +506,6 @@
   }
 }
 
-.gallery img {
-  height: auto;
-}
 .gallery h1 {
   text-align: center;
 }
@@ -548,6 +545,7 @@
 }
 .gallery__images img {
   width: 100%;
+  height: auto;
   margin: auto;
   padding: 4px;
 }
