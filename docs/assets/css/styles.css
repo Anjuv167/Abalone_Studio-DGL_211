@@ -72,8 +72,10 @@ footer p {
   margin: 50px 20px;
 }
 
-.about_mission img, .about_area img {
-  margin: 50px 20px;
+@media screen and (min-width: 798px) {
+  .about_mission img, .about_area img {
+    margin: 50px 20px;
+  }
 }
 
 .about_camille img, .about_mission img, .about_area img {
@@ -86,12 +88,6 @@ footer p {
 .about_area .container,
 .about_mission .container {
   padding: 20px 0px;
-}
-
-.about_camille .content,
-.about_area .content,
-.about_mission .content {
-  min-width: 500px;
 }
 
 .about_camille p,
