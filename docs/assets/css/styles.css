@@ -32,6 +32,15 @@ footer .nav li {
   margin: 0px 15px ;
 }
 
+footer img {
+  margin: -20px auto 0;
+}
+
+@media screen and (min-width: 1179px) {
+  footer img {
+    margin-left: -160px;
+  }
+}
 
 footer p {
   color: rgb(240, 241, 241);
