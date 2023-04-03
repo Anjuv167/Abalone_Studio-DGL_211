@@ -28,15 +28,15 @@ footer .nav li a {
   color: rgb(240, 241, 241);
 }
 
-footer img {
-  margin-top: -20px;
-  margin-left: -160px;
+footer .nav li {
+  margin: 0px 15px ;
 }
+
+
 footer p {
   color: rgb(240, 241, 241);
   font-size: 1.4rem;
 }
-
 /* About Page */
 
 .about_camille {
@@ -132,6 +132,12 @@ footer p {
   margin: 35px 20px;
 }
 
+@media screen and (max-width: 798px) {
+  .contact img {
+    max-width: 320px;
+  }
+}
+
 
 
 /* Contact Form */
@@ -139,7 +145,13 @@ footer p {
 .get-in-touch {
   max-width: 800px;
   margin: 50px auto;
+}
 
+@media screen and (max-width: 798px) {
+  .get-in-touch {
+    max-width: 320px;
+    margin: 50px auto;
+  }
 }
 
 .get-in-touch .title {
