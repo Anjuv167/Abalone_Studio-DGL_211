@@ -73,9 +73,15 @@
 
         h1 {
             margin-left: 3%;
+            font-size: 3rem;
+            
+            @include md {
+                font-size: 4rem;
+            }
 
             @include lg {
                 margin-left: 10%;
+                font-size: 5rem;
             }
 
             @include xxl {
@@ -85,6 +91,14 @@
 
         a {
             margin-right: 3%;
+            font-size: 1rem;
+            padding: 16px 4px;
+            text-align: center;
+
+            @include md {
+                font-size: 2rem;
+                padding: 16px 8px;
+            }
 
             @include lg {
                 margin-right: 10%;
@@ -92,6 +106,10 @@
 
             @include xxl {
                 margin-right: 15%;
+            }
+
+            &:hover {
+                text-decoration: none;
             }
         }
     }

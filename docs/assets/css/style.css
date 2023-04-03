@@ -68,7 +68,8 @@
   }
 }
 .home p {
-  padding: 8px;
+  padding: 16px;
+  font-size: 2rem;
 }
 .home__services {
   background-color: rgba(203, 137, 80, 0.4);
@@ -190,6 +191,7 @@
 @media (min-width: 768px) {
   .home__gallery {
     margin: 0 auto;
+    height: 650px;
   }
 }
 @media (min-width: 992px) {
@@ -226,7 +228,7 @@
     float: right;
     margin: 0;
     position: relative;
-    bottom: 150px;
+    bottom: 250px;
   }
 }
 .home__gallery p {
@@ -238,8 +240,11 @@
 @media (min-width: 768px) {
   .home__gallery .button {
     position: absolute;
-    bottom: 200px;
+    bottom: 150px;
   }
+}
+.home__gallery .button:hover {
+  text-decoration: none;
 }
 .home__carousel {
   margin: 40px auto;
@@ -321,10 +326,17 @@
 }
 .services .cta h1 {
   margin-left: 3%;
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  .services .cta h1 {
+    font-size: 4rem;
+  }
 }
 @media (min-width: 992px) {
   .services .cta h1 {
     margin-left: 10%;
+    font-size: 5rem;
   }
 }
 @media (min-width: 1400px) {
@@ -334,6 +346,15 @@
 }
 .services .cta a {
   margin-right: 3%;
+  font-size: 1rem;
+  padding: 16px 4px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .services .cta a {
+    font-size: 2rem;
+    padding: 16px 8px;
+  }
 }
 @media (min-width: 992px) {
   .services .cta a {
@@ -344,6 +365,9 @@
   .services .cta a {
     margin-right: 15%;
   }
+}
+.services .cta a:hover {
+  text-decoration: none;
 }
 .services__family, .services__couples {
   margin: 50px 0;
@@ -612,6 +636,11 @@ h6 {
 p {
   color: #126D7B;
   font-family: "Nord, serif";
+}
+
+.nav-link:hover {
+  background-color: transparent !important;
+  color: #fed136 !important;
 }
 
 .button {

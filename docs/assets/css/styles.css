@@ -41,14 +41,26 @@ footer p {
 
 .about_camille .content {
   padding: 50px 20px;
-}
-
-.about_camille .row {
   background-color: #cb89505e;
 }
 
 .about_camille img {
-  margin: -40px 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1179px) {
+  .about_camille .content {
+    background-color: transparent;
+  }
+  .about_camille .row {
+    background-color: #cb89505e;
+  }
+
+  .about_camille img {
+    margin: -40px 100px;
+  }
+  
 }
 
 .about_mission .row{
@@ -87,7 +99,7 @@ footer p {
 
 .about_camille .button,
 .about_area .button {
-  margin: 20px;
+  margin: 20px auto;
 }
 
 /* Contact Page */

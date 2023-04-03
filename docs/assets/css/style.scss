@@ -41,6 +41,11 @@ p {
     font-family: "Nord, serif";
 }
 
+.nav-link:hover {
+    background-color: transparent!important;
+    color: $nav-hovered!important;
+}
+
 .button {
     background-color: $button-color;
     color: #fff;
