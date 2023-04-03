@@ -36,12 +36,6 @@ footer img {
   margin: -20px auto 0;
 }
 
-@media screen and (min-width: 1179px) {
-  footer img {
-    margin-left: -160px;
-  }
-}
-
 footer p {
   color: rgb(240, 241, 241);
   font-size: 1.4rem;
