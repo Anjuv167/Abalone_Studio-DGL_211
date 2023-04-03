@@ -97,6 +97,8 @@
 }
 .home__services p {
   max-width: 90ch;
+  padding: 16px;
+  font-size: 2rem;
 }
 @media (min-width: 768px) {
   .home__services .quote {
@@ -233,6 +235,7 @@
 }
 .home__gallery p {
   max-width: 30ch;
+  font-size: 2rem;
 }
 .home__gallery .button {
   margin: 20px auto;
